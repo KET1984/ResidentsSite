@@ -24,8 +24,8 @@ h1, h2, h3 {
 }
 
 header {
-    background-color: #148114;
-    color: #148114;
+    background-color: #78CB54;
+    color: #78CB54;
     /* width: 100vw; */
     padding: 0px 5px;
 }
@@ -35,20 +35,26 @@ header a {
 }
 
 #logo {
-    color: #522916;
+    color: #421305;
 }
 
 #main-menu {
     font-family: 'Bubblegum Sans', sans-serif;
-    color: #522916;
-    padding: 0px 5px;
+    color: #421305;
 }
 
 #main-menu a {
     text-decoration: none;
 }
 
+#main-menu li {
+    list-style-type: none;
+    padding: 0px 5px;
+}
+
 .current {
-    border: 1px solid white;
+    border: 1px solid #f2f2f2;
     border-radius: 5px;
+    padding: 0px 5px;
+    margin-left: -5px;
 }
