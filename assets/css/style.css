@@ -35,11 +35,11 @@ header {
     background-color: #78CB54;
     color: #78CB54;
     width: 100vw;
-    min-height: 90px;
+    min-height: 40px;
     padding: 0px .5rem;
     position: fixed;
     z-index: 99;
-    box-shadow: 0 2px 2px #231E24;
+    box-shadow: 0 2px 4px #421305;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -76,10 +76,9 @@ header a {
 nav {
     position: absolute;
     background-color: #78CB54;
-    width: 100%;
     left: 0;
     padding: 0 .5rem;
-    box-shadow: 0 2px 2px #421305;
+    box-shadow: 0 0 4px .2rem #421305;
     display: none;
     top: 100%;
 }
@@ -102,7 +101,7 @@ main {
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
     /* Add margin at the top to prevent content from being covered by the header */
-    margin-top: 90px;
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
     padding: 0px .5rem;
@@ -120,13 +119,25 @@ main {
 /* Footer */
 footer {
     background-color: #78CB54;
-    color: #421305;
     width: 100vw;
     padding: 0px .5rem;
     position: relative;
     z-index: 99;
-    box-shadow: 0 2px 2px #231E24;
-    display: flex;
+    box-shadow: 0 -2px 4px #421305;
+    display: block;
     justify-content: space-between;
     align-items: baseline;
+}
+
+#socials {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+#socials i {
+    font-size: 200%;
+    color: #421305;
+    padding: 5%;
 }
