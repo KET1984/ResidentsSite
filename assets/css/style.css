@@ -65,12 +65,12 @@ header a {
 
 #main-menu li {
     list-style-type: none;
-    margin-top: 5px;
+    margin: 5px 0;
     font-size: 150%;
 }
 
 .current {
-    border-bottom: 1px solid #421305;
+    border-bottom: 2px solid #421305;
     border-radius: 3px;
 }
 
@@ -141,7 +141,7 @@ footer {
 #socials i {
     font-size: 200%;
     color: #421305;
-    padding: 5%;
+    padding: 15%;
 }
 
 /* Media query: large or landscape phones (576px and up) */
@@ -164,11 +164,11 @@ footer {
         padding-right: 1rem;
     }
 
-    #menu {
+    #main-menu {
         display: flex;
     }
 
-    #menu>li {
+    #main-menu>li {
         padding-left: 1rem;
     }
 
@@ -242,8 +242,11 @@ footer {
 
 /* Media query: laptops and larger (992px and up) */
 @media screen and (min-width: 992px) {
-    #menu a:hover {
-        border-bottom: 1px solid #3a3a3a;
+    #main-menu a:hover {
+        background-color: #421305;
+        color: #78CB54;
+        border-radius: 2px;
+        /* border-bottom: 4px solid #421305; */
     }
 
     #photos {
