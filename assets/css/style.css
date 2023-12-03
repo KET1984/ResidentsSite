@@ -23,6 +23,7 @@ h3 {
     font-family: 'Bubblegum Sans', sans-serif;
     text-transform: uppercase;
     letter-spacing: 1px;
+    color: #421305;
 }
 
 .hidden-header {
@@ -56,7 +57,6 @@ header a {
 #main-menu {
     font-family: 'Bubblegum Sans', sans-serif;
     color: #421305;
-    /* font-size: 350%; */
 }
 
 #main-menu a {
@@ -65,7 +65,7 @@ header a {
 
 #main-menu li {
     list-style-type: none;
-    margin: 5px 0;
+    /* margin: 5px 0; */
     font-size: 150%;
 }
 
@@ -121,7 +121,7 @@ main {
 /* Footer */
 footer {
     background-color: #78CB54;
-    width: 100vw;
+    width: 100%;
     padding: 0px .5rem;
     position: relative;
     z-index: 99;
@@ -168,7 +168,7 @@ footer {
         display: flex;
     }
 
-    #main-menu>li {
+    #main-menu > li {
         padding-left: 1rem;
     }
 
@@ -185,7 +185,7 @@ footer {
     /* Main content */
     main {
         /* Push main content down to accommodate larger header */
-        margin-top: 79px;
+        margin-top: 75px;
     }
 
     /* Hero */
