@@ -65,7 +65,7 @@ header a {
 
 #main-menu li {
     list-style-type: none;
-    /* margin: 5px 0; */
+    margin: 5px 0;
     font-size: 150%;
 }
 
@@ -83,6 +83,7 @@ nav {
     box-shadow: 0 0 4px .2rem #421305;
     display: none;
     top: 100%;
+    margin-bottom: 5px;
 }
 
 /* Nav toggle */
@@ -189,6 +190,12 @@ footer {
     }
 
     /* Hero */
+
+    #test {
+        background-color: #fafafa;
+        display: block;
+    }
+
     #cover-text {
         width: 300px;
         right: 50px;
