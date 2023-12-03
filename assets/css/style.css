@@ -18,13 +18,23 @@ body {
     font-family: 'IBM Plex Sans', sans-serif;
 }
 
+:root {
+--box-shadow-bottom: 0 2px 4px #421305;
+--box-shadow-top: 0 -2px 4px #421305;
+--primary-bg-green: #78CB54;
+--alt-bg-brown: #421305;
+--opaque-60-bg-green: #78CB54CC;
+--alt-text-green: #78CB54;
+--alt-text-brown: #421305; 
+}
+
 h1,
 h2,
 h3 {
     font-family: 'Bubblegum Sans', sans-serif;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: #421305;
+    color: var(--alt-text-brown);
 }
 
 .hidden-heading {
@@ -34,14 +44,15 @@ h3 {
 /* Header */
 
 header {
-    background-color: #78CB54;
-    color: #78CB54;
+    background-color: var(--primary-bg-green);
+    color: var(--alt-text-green);
     width: 100vw;
     min-height: 50px;
     padding: 0px .5rem;
     position: fixed;
     z-index: 99;
-    box-shadow: 0 2px 4px #421305;
+    /* box-shadow: 0 2px 4px #421305; */
+    box-shadow: var(--box-shadow-bottom);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -52,12 +63,12 @@ header a {
 }
 
 #logo {
-    color: #421305;
+    color: var(--alt-text-brown);
 }
 
 #main-menu {
     font-family: 'Bubblegum Sans', sans-serif;
-    color: #421305;
+    color: var(--alt-text-brown);
 }
 
 #main-menu a {
@@ -80,7 +91,7 @@ header a {
 /* Navbar styles with dropdown toggle */
 nav {
     position: absolute;
-    background-color: #78CB54;
+    background-color: var(--primary-bg-green);
     right: 0;
     padding: 0 .5rem;
     box-shadow: 0 0 4px .2rem #421305;
@@ -121,7 +132,7 @@ main {
 }
 
 #intro {
-    background-color: #78CB54CC;
+    background-color: var(--opaque-60-bg-green);
     display: block;
     width: 250px;
     height: auto;
@@ -129,16 +140,39 @@ main {
     border-radius: 5px;
     padding: 1rem;
     text-align: justify;
+    margin-top: 1.5rem;
+    box-shadow: var(--box-shadow-bottom);
+}
+
+#committee-table {
+    background-color: var(--primary-bg-green);
+    display: flex;
+    width: fit-content;
+    border-collapse: collapse;
+}
+
+#committee-table th {
+    background-color: var(--alt-bg-brown);
+    border: 2px solid #421305;
+    color: var(--alt-text-green);
+    padding: .5em;
+}
+
+#committee-table td {
+    border: 2px solid #421305;
+    margin-top: -2px;
+    padding: .5em;
+    text-align: center;
 }
 
 /* Footer */
 footer {
-    background-color: #78CB54;
+    background-color: var(--primary-bg-green);
     width: 100%;
     padding: 0px .5rem;
     position: relative;
     z-index: 99;
-    box-shadow: 0 -2px 4px #421305;
+    box-shadow: var(--box-shadow-top);
     display: block;
     justify-content: space-between;
     align-items: baseline;
@@ -153,12 +187,12 @@ footer {
 
 #socials i {
     font-size: 200%;
-    color: #421305;
+    color: var(--alt-text-brown);
     padding: 15%;
 }
 
 #socials img {
-    color: #421305;
+    color: var(--alt-text-brown);
     padding: 15%;
 }
 
@@ -197,8 +231,8 @@ footer {
     }
 
     #main-menu a:hover {
-        background-color: #421305;
-        color: #78CB54;
+        background-color: var(--alt-bg-brown);
+        color: var(--alt-text-green);
         border-radius: 2px;
     }
     .nav-toggle-label {
@@ -206,8 +240,6 @@ footer {
     }
 
     #logo {
-        font-size: 280%;
-        line-height: 50px;
         margin: 0 0.5rem;
     }
 
@@ -217,9 +249,6 @@ footer {
         margin-top: 50px;
     }
 
-    /* Hero */
-
-    
     /* Memories Page */
 
     #memories {
