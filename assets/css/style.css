@@ -144,6 +144,12 @@ main {
     box-shadow: var(--box-shadow-bottom);
 }
 
+#committee > div {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 1.5rem .5rem;
+}
+
 #committee-table {
     background-color: var(--primary-bg-green);
     display: flex;
