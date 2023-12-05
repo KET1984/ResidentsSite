@@ -23,7 +23,8 @@ body {
 --box-shadow-top: 0 -2px 4px #421305;
 --primary-bg-green: #78CB54;
 --alt-bg-brown: #421305;
---opaque-60-bg-green: #78CB54CC;
+--opaque-60-bg-green: #78cb54CC;
+--opaque-30-bg-green: #78cb5466;
 --alt-text-green: #78CB54;
 --alt-text-brown: #421305; 
 }
@@ -201,6 +202,32 @@ footer {
 #socials img {
     color: var(--alt-text-brown);
     padding: 15%;
+}
+
+/* Memories page */
+
+.memories-main {
+    background-color: var(--opaque-30-bg-green);
+}
+
+#memories-intro {
+    background-color: var(--alt-bg-brown);
+    color: var(--alt-text-green);
+    margin: 1.5rem 0;
+    width: 90%;
+    border-radius: 10px;
+    align-self: center;
+}
+
+#memories-intro > h2 {
+    color: inherit;
+    font-size: 200%;
+    text-align: center;
+}
+
+#memories-intro > p {
+    font-size: medium;
+    text-align: center;
 }
 
 /* Media query: large or landscape phones (576px and up) */
