@@ -51,7 +51,6 @@ header {
     padding: 0px .5rem;
     position: fixed;
     z-index: 99;
-    /* box-shadow: 0 2px 4px #421305; */
     box-shadow: var(--box-shadow-bottom);
     display: flex;
     justify-content: space-between;
@@ -132,6 +131,7 @@ main {
 }
 
 #intro {
+    overflow: auto;
     background-color: var(--opaque-60-bg-green);
     display: block;
     width: 250px;
@@ -145,6 +145,7 @@ main {
 }
 
 #committee > div {
+    overflow: auto;
     display: flex;
     flex-direction: row-reverse;
     margin: 1.5rem .5rem;
