@@ -50,15 +50,22 @@
             <form action="https://formdump.codeinstitute.net" method="post" id="contactus-form">
                 <fieldset>
                 <!-- <legend>Identity Details</legend> -->
-                    <div id="details">
-                        <label for="name">Full Name:</label>
-                        <input type="text">
-                        <label for="house-number">House Number:</label>
-                        <input type="number">
-                        <label for="email">Email Address:</label>
-                        <input type="email">
-                        <label for="subject">Subject:</label>
-                        <select id="subject" name="subject">
+                    <div>
+                        <label for="name" class="hidden-label">Full Name:</label>
+                        <input type="text" placeholder="Full Name" required>
+                    </div>
+                    <div>
+                        <label for="house-number" class="hidden-label">House Number:</label>
+                        <input type="number" placeholder="Number Only" required>
+                    </div>
+                    <div>
+                        <label for="email" class="hidden-label">Email Address:</label>
+                        <input type="email" placeholder="Email Address">
+                    </div>
+                    <div>
+                        <label for="subject" class="hidden-label">Subject:</label>
+                        <select id="subject" name="subject" required>
+                            <option value="" disabled selected>Reason</option>
                             <option value="feedback">Feedback</option>
                             <option value="request">Request</option>
                             <option value="issue">Issue</option>
@@ -66,9 +73,12 @@
                             <option value="other">Other</option>
                         </select>
                     </div>
-                    <div>
+                </fieldset>
 
-                    </div>
+                <fieldset>
+                    <label for="message">Tell Us How We Can Help You?</label>
+                    <br>
+                    <textarea id="message" rows="6" cols="40" name="message" placeholder="Please provide as much detail as you can so the committe members can review and get back to you as soon as possible."></textarea>
                 </fieldset>
 
                 </fieldset>
