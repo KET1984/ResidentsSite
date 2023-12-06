@@ -19,14 +19,15 @@ body {
 }
 
 :root {
---box-shadow-bottom: 0 2px 4px #421305;
---box-shadow-top: 0 -2px 4px #421305;
---primary-bg-green: #78CB54;
---alt-bg-brown: #421305;
---opaque-60-bg-green: #78cb54CC;
---opaque-30-bg-green: #78cb5466;
---alt-text-green: #78CB54;
---alt-text-brown: #421305; 
+    --box-shadow-bottom: 0 2px 4px #421305;
+    --box-shadow-top: 0 -2px 4px #421305;
+    --primary-bg-green: #78CB54;
+    --alt-bg-brown: #421305;
+    --opaque-60-bg-green: #78cb54CC;
+    --opaque-30-bg-green: #78cb5466;
+    --opaque-30-bg-brown: #42130566;
+    --alt-text-green: #78CB54;
+    --alt-text-brown: #421305;
 }
 
 h1,
@@ -145,7 +146,7 @@ main {
     box-shadow: var(--box-shadow-bottom);
 }
 
-#committee > div {
+#committee>div {
     overflow: auto;
     display: flex;
     flex-direction: row-reverse;
@@ -220,13 +221,13 @@ footer {
     padding: 1rem;
 }
 
-#memories-intro > h2 {
+#memories-intro>h2 {
     color: inherit;
     font-size: 200%;
     text-align: center;
 }
 
-#memories-intro > p {
+#memories-intro>p {
     font-size: medium;
     text-align: center;
 }
@@ -262,9 +263,15 @@ footer {
     padding: .5rem;
 }
 
+/* Contact Us Page */
+
+.contactus-main {
+    background-color: #42130566;
+}
+
 /* Media query: large or landscape phones (576px and up) */
 @media screen and (min-width: 576px) {
-    
+
     #intro {
         align-self: flex-start;
         width: 500px;
@@ -292,7 +299,7 @@ footer {
         display: flex;
     }
 
-    #main-menu > li {
+    #main-menu>li {
         padding-left: 1rem;
     }
 
@@ -301,6 +308,7 @@ footer {
         color: var(--alt-text-green);
         border-radius: 2px;
     }
+
     .nav-toggle-label {
         display: none;
     }
