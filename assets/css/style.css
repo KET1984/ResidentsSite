@@ -267,6 +267,18 @@ footer {
 
 .contactus-main {
     background-color: #42130566;
+    display: flex;
+}
+
+.contactus-main > h2{
+    background-color: var(--opaque-60-bg-green);
+    width: fit-content;
+    align-self: center;
+    margin: 1.8rem 0;
+    padding: .5rem;
+    font-size: 200%;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow-bottom);
 }
 
 #contactus {
@@ -275,10 +287,15 @@ footer {
     align-self: center;
 }
 
-.hidden-label {
-    display: none;
+.form-container {
+    display: flex;
+    flex-direction: column;
 }
 
+#form-buttons {
+    flex-direction: row;
+    justify-content: space-between;
+}
 /* Media query: large or landscape phones (576px and up) */
 @media screen and (min-width: 576px) {
 

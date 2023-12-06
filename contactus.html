@@ -46,21 +46,21 @@
     <!-- Main Content -->
     <main class="contactus-main" aria="Contact Us Form">
         <h2 class="box">Get In Touch</h2>
-        <section id="contactus" class="flex-container">
+        <section id="contactus">
             <form action="https://formdump.codeinstitute.net" method="post" id="contactus-form">
-                <fieldset>
+                <fieldset class="form-container">
                 <!-- <legend>Identity Details</legend> -->
                     <div>
                         <label for="name" class="hidden-label">Full Name:</label>
-                        <input type="text" placeholder="Full Name" required>
+                        <input type="text" placeholder="Enter Full Name" name="name" required>
                     </div>
                     <div>
                         <label for="house-number" class="hidden-label">House Number:</label>
-                        <input type="number" placeholder="Number Only" required>
+                        <input type="number" placeholder="Enter House Number" name="house number" required>
                     </div>
                     <div>
                         <label for="email" class="hidden-label">Email Address:</label>
-                        <input type="email" placeholder="Email Address">
+                        <input type="email" placeholder="Enter Email Address"  name="email">
                     </div>
                     <div>
                         <label for="subject" class="hidden-label">Subject:</label>
@@ -74,13 +74,13 @@
                         </select>
                     </div>
                 </fieldset>
-
-                <fieldset>
+                <fieldset class="form-container">
                     <label for="message">Tell Us How We Can Help You?</label>
-                    <br>
-                    <textarea id="message" rows="6" cols="40" name="message" placeholder="Please provide as much detail as you can so the committe members can review and get back to you as soon as possible."></textarea>
+                    <textarea id="message" rows="6" cols="40" name="message" placeholder="Please provide as much detail as you can so the committe members can review and get back to you as soon as possible." required></textarea>
                 </fieldset>
-
+                <fieldset id="form-buttons" class="form-container">
+                    <button type="submit">Send</button>
+                    <button type="reset">Clear</button>
                 </fieldset>
             </form>
         </section>
