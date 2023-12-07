@@ -296,9 +296,18 @@ footer {
     flex-direction: column;
 }
 
+
 #form-buttons {
     flex-direction: row;
+}
+
+#form-buttons button{
+    flex-wrap: wrap;
     justify-content: space-between;
+    font-size: 1.3rem;
+    width: 50%;
+    background-color: var(--alt-bg-brown);
+    color: var(--alt-text-green);
 }
 /* Media query: large or landscape phones (576px and up) */
 @media screen and (min-width: 576px) {
