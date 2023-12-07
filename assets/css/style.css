@@ -159,7 +159,7 @@ main {
 #committee-table {
     background-color: var(--primary-bg-green);
     display: flex;
-    width: fit-content;
+    width: 250px;
     border-collapse: collapse;
 }
 
@@ -309,6 +309,14 @@ footer {
         margin: 5% 3%;
     }
 
+    #committee-table {
+        width: 500px;
+    }
+        
+    #committee-table th, td {
+        width: 250px;
+    }
+
     #memory-gallery img {
         width: 50%;
     }
@@ -356,6 +364,16 @@ footer {
         justify-content:space-evenly;
         align-content: center;
     }
+    
+    #committee-table {
+        width: 400px;
+    }
+    
+    #committee-table th,
+    td {
+        width: 200px;
+    }
+
 
     /* Memories Page */
 
@@ -375,6 +393,8 @@ footer {
     .contactus-main {
         background-position: center;
         position: relative;
+        flex-direction: column;
+        justify-content: center;
     }
 
     #contactus-form {
