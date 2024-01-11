@@ -268,12 +268,12 @@ footer {
 
 /* Contact Us Page */
 
-.contactus-main {
+.contact_us-main {
     background-color: #42130566;
     display: flex;
 }
 
-.contactus-main > h2{
+.contact_us-main > h2{
     background-color: var(--opaque-60-bg-green);
     width: fit-content;
     align-self: center;
@@ -285,7 +285,7 @@ footer {
     text-align: center;
 }
 
-#contactus {
+#contact_us {
     max-width: 90%;
     overflow: auto;
     align-self: center;
@@ -408,14 +408,14 @@ footer {
 
     /* Contact Us Page */
 
-    .contactus-main {
+    .contact_us-main {
         background-position: center;
         position: relative;
         flex-direction: column;
         justify-content: center;
     }
 
-    #contactus-form {
+    #contact_us-form {
         position: sticky;
         max-width: 400px;
         top: 150px;
